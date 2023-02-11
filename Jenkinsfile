@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh '/Applications/Docker.app/Contents/Resources/bin/docker-compose up -d --build'
+                sh '/Applications/Docker.app/Contents/Resources/bin/docker-compose-v1/docker-compose up -d --build'
             }
         }
     }
